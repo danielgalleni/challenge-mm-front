@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <h1>Register of the CPF</h1>
+      <form name="cpf" method="POST" action="http://localhost:8080/cpfs">
+        <table>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" ></td>
+          </tr>
+          <tr>
+            <td>CPF</td>
+            <td><input type="text" name="cpf" ></td>
+          </tr>
+          <tr>
+            <td>BlackList</td>
+            <td><input type="text" name="blackList" ></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="submit" value="Register" ></td>
+          </tr>
+          </table>
+          
+      </form>   
+
+  </body>
+</html>

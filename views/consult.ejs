@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+        
+    <script type="text/javascript">
+      function cpfConsult() {
+          let cpf = document.getElementById("_cpf").value;
+          if (cpf) {
+              let url = 'http://localhost:8080/status/' + cpf;
+              window.location.href = url;
+          }                
+      }
+    </script>
+
+  </head>
+  <body>
+      <h1>Consult CPF</h1>
+      <table>
+        <tr>
+          <td>CPF</td>
+          <td><input type="text" name="cpf" id="_cpf"></td>
+        </tr>
+        <tr>
+          <a href="javascript:cpfConsult();">Consult</a>
+        </tr>
+      </table>
+
+  </body>
+</html>
